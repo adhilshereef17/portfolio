@@ -1,0 +1,222 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Pangolin', cursive;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-color:#fff;
+    position:relative;
+
+}
+.navbar{
+     display: flex;
+     justify-content: space-between;
+    
+     align-items: center;/* to display items to center */
+     width:100%;
+     background-color: rgb(24, 29, 51);
+     color: white;
+}
+.links{
+    text-decoration: none;/* to remove the link's underline */
+    font-weight: bold;
+    color: rgb(207, 192, 192);
+    font-size: 20px;
+}
+.logo{
+    width:130px;
+}
+.linkitems{
+    display: inline-block; /* to display vertical list in horizontal */
+    margin: 10px 20px;
+}
+/* pseudo class */
+.links:hover{
+    color:lightcoral;
+}
+.title{
+    margin-left: 8%;
+    margin-top:13%;
+}
+.title1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: chocolate;
+}
+.download{
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius:5px;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.images{
+    position: absolute;
+    width:45%;
+    height:85%;
+    bottom:0px;
+    right:30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left:50%;
+    bottom: 0px;
+    transform: translateX(-50%); /* to remove scroll option at bottom */
+    transition: bottom 1s,left 2s;/* transition prop for making the animation smoother */
+}
+.images:hover #shape{
+    bottom:70px;
+}
+.images:hover #girl{
+    left:40%;
+}
+#about{
+    margin:21% 8% 0px 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    color: rgb(34, 53, 2);
+    font-size: 20px;
+}
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top:2rem;
+}
+.about_image img{
+    width:80%;
+    border-radius: 1rem; 
+}
+.about_details{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify; /* to make proper alignment */ 
+
+}
+.information{
+    margin-top:2rem;
+}
+.info_box{
+    margin-bottom: 1rem;
+    display: flex;
+    text-align: center;  
+}
+.info_box span{
+    margin-left: 1rem;
+}
+html{
+    scroll-behavior: smooth;/* for smooth scrollig */
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skill_container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.skill_img img{
+    width:80%;
+    padding-left: 4rem;
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    padding:  1rem 0px;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base_bar{
+    width:100%;
+    height:0.5rem;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html_bar{
+    width: 95%;
+    background-color: darkgoldenrod;
+}
+.css_bar{
+    width:88%;
+    background-color: darkgoldenrod;
+}
+.js_bar{
+    width: 89%;
+    background-color: darkgoldenrod;
+}
+.react_bar{
+    width: 85%;
+    background-color: darkgoldenrod;
+}
+.icon_set{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.icon,.up_arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex ;
+    justify-content: center; /* horizontal allignment */
+    align-items: center; /* vertical allignment of content inside the div */
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient( to bottom right, darkgoldenrod,red);
+    
+}
+.icon:hover i{
+    color:white;
+    animation: shake 0.75s;
+}
+@keyframes shake{ /* for animation */
+    10%{ 
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+
+}
+footer{
+    margin: 3rem 0px;
+}
+.up_arrow{
+    float: right;
+    background-image: linear-gradient( to bottom right, darkgoldenrod,red);
+    margin:0px 10px 50px 0px;
+}
+.up_arrow:hover i{
+    color: #fff;
+
+}
